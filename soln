@@ -1,0 +1,26 @@
+#include<iostream>
+#include<cmath>
+
+using namespace std;
+int main(){
+    double P,R,M,r,EMI;
+    cout<<"enter P:";
+    cin>>P;
+    cout<<"enter R:";
+    cin>>R;
+    cout<<"enter M:";
+    cin>>M;
+    
+    // annual rate to monthly rate
+    
+    r=(R/12)/100;
+    
+    //EMI
+    EMI = (P * r * pow(1 + r, M)) / (pow(1 + r, M) - 1);
+    
+    // result
+    cout<<"your emi is:"<<EMI<<endl;
+
+    
+    
+}
